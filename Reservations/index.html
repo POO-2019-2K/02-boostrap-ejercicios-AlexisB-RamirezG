@@ -1,0 +1,154 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservations</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:black" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-family: "Montserrat", "black";
+            font-size: 65px;
+            color: rgb(209, 40, 79);
+        }
+
+        label {
+            font-family: "Montserrat", "black";
+            color: rgb(238, 187, 18);
+        }
+
+        h3 {
+            font-family: "Montserrat";
+            color: rgb(212, 65, 99);
+        }
+
+        p {
+            font-family: "Montserrat", "black";
+            font-size: 30px;
+            color: rgb(255, 116, 103);
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to bottom right, rgb(252, 241, 206), rgb(252, 217, 103));
+            height: 80;
+        }
+
+        #column2 {
+            padding-top: 40px;
+        }
+
+        td {
+            font-family: "Aleo";
+            color: black;
+        }
+
+        #agenda {
+            padding-left: 50px;
+        }
+
+        th {
+            font-family: "Montserrat";
+            color: rgb(212, 65, 99);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div>
+            <img src="Hotel.png" width="70px" class="rounded float-left">
+            <h1 id="logo">HOTEL RESERVATIONS</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h3>Reservation Data</h3>
+                <div class="row">
+                    <form class="col-md-12">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="roomType">Room type</label>
+                            <input type="text" id="roomType" class="form-control" placeholder="Which type of room?">
+                        </div>
+                        <div class="form-group">
+                            <label for="arrivalDate">Date of arrival</label>
+                            <input type="date" id="arrivalDate" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row" id="column2">
+                    <form class="col-md-12">
+                        <div class="form-group">
+                            <label for="telephone">Phone number</label>
+                            <input type="text" id="phone" class="form-control" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="nPeople">Number of people</label>
+                            <input type="text" id="nPeople" class="form-control"
+                                placeholder="How many are going to stay?">
+                        </div>
+                        <div class="form-group">
+                            <label for="departureDate">Date of departure</label>
+                            <input type="date" id="departureDate" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <table id="reservations" class="table col-md-10 table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Reservations</td>
+                                <td id="reservationsTotal"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <button type="button" id="btnAdd" class="btn btn-warning">Add</button>
+            </div>
+        </div>
+        <div class="row">
+            <table id="agenda" class="table col-md-12 table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Telephone</th>
+                        <th>Room Type</th>
+                        <th>Number of people</th>
+                        <th>Arrival Date</th>
+                        <th>Departure Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

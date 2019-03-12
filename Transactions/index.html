@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transactions</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:black" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-family: "Montserrat", "black";
+            font-size: 65px;
+            color: rgb(209, 40, 79);
+        }
+
+        label {
+            font-family: "Montserrat", "black";
+            color: rgb(238, 187, 18);
+        }
+
+        h3 {
+            font-family: "Montserrat";
+            color: rgb(212, 65, 99);
+        }
+
+        p {
+            font-family: "Montserrat", "black";
+            font-size: 30px;
+            color: rgb(255, 116, 103);
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to bottom right, rgb(252, 241, 206), rgb(252, 217, 103));
+            height: 80;
+        }
+
+        #column2 {
+            padding-top: 40px;
+        }
+
+        td {
+            font-family: "Aleo";
+            color: black;
+        }
+
+        #agenda {
+            padding-left: 50px;
+        }
+
+        th {
+            font-family: "Montserrat";
+            color: rgb(212, 65, 99);
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div>
+            <h1>TRANSACTIONS</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Movement Data</h3>
+                <div class="row">
+                    <form class="col-md-11">
+                        <div class="form-group">
+                            <label for="depositW">Deposit / Withdraw</label>
+                            <input type="text" id="depositW" class="form-control" placeholder="How much?">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 align-item">
+                <button type="button" id="bttnPerform" class="btn btn-warning">Perform</button>
+            </div>
+        </div>
+        <div class="row">
+            <table id="stats" class="table col-md-3 table-bordered">
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Deposits</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total Deposited</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Withdraws</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total Withdrawed</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Movements</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Balance</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <table id="movements" class="table col-md-8 table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Account</th>
+                        <th>Deposit/Withdraw</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
